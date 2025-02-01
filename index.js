@@ -1,33 +1,21 @@
-function nice(name) {
-    console.log("Hey "+ name +" you are nice")
-    console.log("Hey "+ name +" you are good")
-    console.log("Hey "+ name +" you are bad")
-    console.log("Hey "+ name +" you are tall")
-    console.log("Hey "+ name +" you are weak")
-}
+// create faulty calculator
+console.log("This is strings tutorial")
+let a = "Aryan"
+console.log(a[0])
+console.log(a[1])
+console.log(a[2])
+console.log(a[3])
+console.log(a[4])
 
-// nice("Karki")
+console.log(a.length)
 
-function sum(a, b, c = 3) {
-    //console.log(a + b)
-    return a + b + c
-}
+let name = "Aryan"
+let friend = "Prabin"
 
-result1 = sum (3, 5)
-result2 = sum (13, 5)
-result3 = sum (3, 15)
+console.log("His name is " + name + " and his friend name is "+ friend)
+console.log(`His name is ${name} and his bestfriend name is ${friend}`)
 
-// nice("Karki")
-// nice("jungey")
-
-console.log("The sum of these number is: ", result1)
-console.log("The sum of these number is: ", result2)
-console.log("The sum of these number is: ", result3)
-
-const func1 = (x)=> {
-    console.log("I am an arrow function", x)
-}
-
-func1(34);
-func1(66);
-func1(84);
+let b= "Karki"
+console.log(b.toUpperCase())
+console.log(b.toLowerCase())
+console.log(b.length)
