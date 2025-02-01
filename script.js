@@ -1,20 +1,21 @@
-alert("Hello World");
+console.log("hey its me aryan jung karki")
 
-console.log("code is running")
+var a = 5;
+var b= 6;
 
-var a = prompt("Enter your number")
-var isTrue = confirm("Are you sure you want to blast your computer")
+console.log(a+b+8)
 
-if(isTrue) {
-    console.log("Compuer is blasting")
+var str1 = "hello";
+var str2 = "world";
+
+let o = {
+    "name": "Aryan",
+    "job code": 5600,
+    "is_this": true
 }
 
-else{
-    console.log("computer is not blasting chill")
-}
-
-console.log("Your number is "+a)
-
-document.title= "Hey i am good"
-
-document.body.style.backgroundColor = "red"
+console.log(o);
+o.salary = "1000crore";
+console.log(o);
+o.salary = "4000crore";
+console.log(o);
