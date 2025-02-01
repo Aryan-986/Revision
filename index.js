@@ -1,24 +1,35 @@
-console.log("Hello i am aryan karki")
+console.log("My name ai aryan karki")
 
-let age = 0;
+// let a=1;
+// // console.log(a)
+// // console.log(a+1)
+// // console.log(a+2)
 
+// for (let index = 0; index < 100; index++) {
+//     console.log(a+index);
+    
+// }
 
-//if((age+grace)>18) {
-//    console.log("You can drive");
-//}
+// let object = {
+//     name: "Aryan",
+//     role:"Programmer",
+//     company: "CodewithAryan Ai"
+// }
 
-//else {
-  //  console.log("You cannot drive");
-//}
+// for (const key in object) {
+//         const element = object[key];
+//         console.log(key,element)
+        
+//     }
 
-if(age==18){
-    console.log('You can drive');
-}
+// let i = 0;
+// while (i < 6) {
+// console.log(i)
+// i++;
+// }
 
-else if(age == 0) {
-    console.log("Are you kidding?")
-}
-
-else{
-    console.log("You cannot drive");
-}
+let i = 0
+do {
+    console.log(i)
+    i++;
+}while(i<6);
