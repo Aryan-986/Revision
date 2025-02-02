@@ -1,56 +1,30 @@
-//trying to create buisness name generator by combining list of adjectives and shop name 
-//and another world
+let array = [1, 45, 65, 4, 7, 33]
 
-// Adjectives:
-// Crazy
-// Amazing
-// Fire
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+//     console.log(element)
+    
+// }
 
-// Shop name: 
-// Engine 
-// foods 
-// Garmets 
 
-// Another Word: 
-// Bros 
-// Limited 
-// Hub 
 
-let random = Math.random()
-let first, second, third;
-//0, 0.33, 0.66, 1
-if(random<0.33){
-    first= "crazy"
-}
-else if (random<0.66 && random>=-0.33){
-    first="Amazing"
-}
-else{
-    first="fire"
-}
+// array.forEach((value, index, arr)=>{
+//     console.log(value, index, arr)
+// })
 
-//generating the second word
- random = Math.random()
-if(random<0.33){
-    second = "engine"
-}
-else if (random<0.66 && random>=-0.33){
-    second ="foods"
-}
-else{
-    second ="garmets"
-}
+// let object = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
 
-//generating the third word
-random = Math.random()
-if(random<0.33){
-    third = "bros"
-}
-else if (random<0.66 && random>=-0.33){
-    third="limited"
-}
-else{
-    third="hub"
-}
+// for (const key in object) {
+//     if(Object.hasOwnProperty.call(object, key)) {
+//         const element = object[key];
+//         console.log(element)
+//     }
+// }
 
-console.log(`${first} ${second} ${third}`)
+for (const element of array) {
+    console.log(element)
+}
