@@ -1,21 +1,56 @@
-// create faulty calculator
-console.log("This is strings tutorial")
-let a = "Aryan"
-console.log(a[0])
-console.log(a[1])
-console.log(a[2])
-console.log(a[3])
-console.log(a[4])
+//trying to create buisness name generator by combining list of adjectives and shop name 
+//and another world
 
-console.log(a.length)
+// Adjectives:
+// Crazy
+// Amazing
+// Fire
 
-let name = "Aryan"
-let friend = "Prabin"
+// Shop name: 
+// Engine 
+// foods 
+// Garmets 
 
-console.log("His name is " + name + " and his friend name is "+ friend)
-console.log(`His name is ${name} and his bestfriend name is ${friend}`)
+// Another Word: 
+// Bros 
+// Limited 
+// Hub 
 
-let b= "Karki"
-console.log(b.toUpperCase())
-console.log(b.toLowerCase())
-console.log(b.length)
+let random = Math.random()
+let first, second, third;
+//0, 0.33, 0.66, 1
+if(random<0.33){
+    first= "crazy"
+}
+else if (random<0.66 && random>=-0.33){
+    first="Amazing"
+}
+else{
+    first="fire"
+}
+
+//generating the second word
+ random = Math.random()
+if(random<0.33){
+    second = "engine"
+}
+else if (random<0.66 && random>=-0.33){
+    second ="foods"
+}
+else{
+    second ="garmets"
+}
+
+//generating the third word
+random = Math.random()
+if(random<0.33){
+    third = "bros"
+}
+else if (random<0.66 && random>=-0.33){
+    third="limited"
+}
+else{
+    third="hub"
+}
+
+console.log(`${first} ${second} ${third}`)
