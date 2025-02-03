@@ -1,28 +1,28 @@
-console.log("AryanJungKarki")
+function createCard(title, cName, views, monthsOld, duration, thumbnail) {
+    let viewStr = ""; // Declare viewStr outside to avoid scope issues
 
-//  let boxes = document.getElementsByClassName("box")
-//  console.log(boxes)
-
-//  boxes[3].style.backgroundColor = "red"
-
-// document.getElementById("redbox").style.backgroundColor = "red";
-
-console.log(document.querySelectorAll(".box"))
-
-function getRandomColor(){
-    const letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let index = 0; index < 6; index++) {
-        // const element = array[index];
-        color += letters[Math.floor(Math.random() * 16)];
-        
+    if (views < 100000) {
+        viewStr = (views / 1000).toFixed(1) + "k"; // Add .toFixed(1) for better formatting
+    } else if (views > 1000000) {
+        viewStr = (views / 1000000).toFixed(1) + "M";
+    } else {
+        viewStr = (views / 1000).toFixed(1) + "k";
     }
-    return color;
+
+    let html = `<div class="card">
+            <div class="image">
+                <img src="${thumbnail}" alt="">
+                <div class="capsule">${duration}</div>
+            </div>
+            <div class="text">
+                <h1>${title}</h1>
+                <p>${cName} • ${viewStr} views • ${monthsOld} months ago</p>
+            </div>
+        </div>`;
+    
+    document.querySelector(".container").innerHTML += html; // Use += for efficiency
 }
 
-document.querySelectorAll(".box").forEach(e=>{
-    e.style.backgroundColor = getRandomColor(); //Asign a random background color
-    e.style.color = getRandomColor();
-});
-
-//given 5 boxes, assign a random color and a random background to each box using DOM concepts
+createCard("Introduction to Backend | Sigma Web developer Video #2",
+    "CodeWithHarry", 560000, 7, "31:22", "https://i.ytimg.com/an_webp/zZKgfWLPZ-I/mqdefault_6s.webp?du=3000&sqp=CPjBg70G&rs=AOn4CLCfTYS32LdVWjySCAkubuBrodOZzw"
+);

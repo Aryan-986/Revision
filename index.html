@@ -5,30 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            height: 45px;
-            width: 56px;
+        .card{
+            display: flex;
             border: 2px solid black;
-            margin: 5px;
-            padding: 5px;
+            width: 900px;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+        }
 
+        .image img{
+            width: 200px;
+        }
+
+        .text h1, p{
+            padding: 2px 0;
+        }
+        .image{
+            position: relative;
+        }
+        .image.capsule{
+            position: absolute;
+            bottom: 4px;
+            z-index: 10;
+            right: 5px;
+            background: #242020;
+            opacity: 0.9;
+            color: white;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 14px;
+            margin: 5px;
         }
     </style>
+    
 </head>
 <body>
     <div class="container">
-        <div class="box">Mahesh dhalley 1</div>
-        <div class="box">Mahesh dhalley 1.5</div>
-        <div class="box">Mahesh dhalley 2</div>
-        <div id="redbox" class="box">Mahesh dhalley 2.5</div>
-        <div class="box">Mahesh dhalley 3</div>
-        <div class="box">Mahesh dhalley 4</div>
-        <div class="box">Mahesh dhalleyv5</div>
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/an_webp/zZKgfWLPZ-I/mqdefault_6s.webp?du=3000&sqp=CPjBg70G&rs=AOn4CLCfTYS32LdVWjySCAkubuBrodOZzw"
+                alt="">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Developer #2</h1>
+                <p>Code with harry . 727k views . 2 Months ago</p>
+            </div>
+        </div>
+
     </div>
     <script src="index.js"></script>
 </body>
 </html>
-
-<!--
-Given 5 basic, Assign a random color and a random background to each box 
-using DOM concepts-->>
