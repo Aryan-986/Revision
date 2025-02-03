@@ -1,28 +1,24 @@
-function createCard(title, cName, views, monthsOld, duration, thumbnail) {
-    let viewStr = ""; // Declare viewStr outside to avoid scope issues
+let a = prompt("Enter first number")
 
-    if (views < 100000) {
-        viewStr = (views / 1000).toFixed(1) + "k"; // Add .toFixed(1) for better formatting
-    } else if (views > 1000000) {
-        viewStr = (views / 1000000).toFixed(1) + "M";
-    } else {
-        viewStr = (views / 1000).toFixed(1) + "k";
-    }
-
-    let html = `<div class="card">
-            <div class="image">
-                <img src="${thumbnail}" alt="">
-                <div class="capsule">${duration}</div>
-            </div>
-            <div class="text">
-                <h1>${title}</h1>
-                <p>${cName} • ${viewStr} views • ${monthsOld} months ago</p>
-            </div>
-        </div>`;
-    
-    document.querySelector(".container").innerHTML += html; // Use += for efficiency
+let b = prompt ("Enter second number")
+if(isNaN(a) || isNaN(b)){
+    throw SyntaxError("Sorry this is not allowed")
 }
 
-createCard("Introduction to Backend | Sigma Web developer Video #2",
-    "CodeWithHarry", 560000, 7, "31:22", "https://i.ytimg.com/an_webp/zZKgfWLPZ-I/mqdefault_6s.webp?du=3000&sqp=CPjBg70G&rs=AOn4CLCfTYS32LdVWjySCAkubuBrodOZzw"
-);
+let sum = parseInt(a) + parseInt(b)
+
+function main(){
+    let x= 1;
+}
+try {
+    console.log("The sum is", sum*x)
+    return true
+
+}   catch (error) {
+    console.log("Error occured Aryan")
+    return false
+}
+finally{
+    console.log("Files are being close and db connection is being closed")
+}
+
