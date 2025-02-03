@@ -37,3 +37,4 @@ if (number === 0 || number === 1) {
 }
 
 console.log(`The factorial of ${number} is: ${factorial}`);
+

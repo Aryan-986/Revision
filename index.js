@@ -1,30 +1,14 @@
-let array = [1, 45, 65, 4, 7, 33]
+console.log("AryanJungKarki")
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-//     console.log(element)
-    
-// }
+//  let boxes = document.getElementsByClassName("box")
+//  console.log(boxes)
 
+//  boxes[3].style.backgroundColor = "red"
 
+// document.getElementById("redbox").style.backgroundColor = "red";
 
-// array.forEach((value, index, arr)=>{
-//     console.log(value, index, arr)
-// })
+console.log(document.querySelectorAll(".box"))
 
-// let object = {
-//     a: 1,
-//     b: 2,
-//     c: 3
-// }
-
-// for (const key in object) {
-//     if(Object.hasOwnProperty.call(object, key)) {
-//         const element = object[key];
-//         console.log(element)
-//     }
-// }
-
-for (const element of array) {
-    console.log(element)
-}
+document.querySelectorAll(".box").forEach(e=>{
+    e.style.backgroundColor = "green"
+})
